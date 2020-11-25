@@ -1,12 +1,18 @@
-var multiplicateur = window.prompt("Entrez un multiplicateur");
 
-function tableMultiplication (multiplicateur)
+
+function tableMultiplication()
 {
-    for (i=0; i<=10; i++)
+    /// Saisie d'un multiplicateur ///
+    multiplicateur = (window.prompt("Entrez un multiplicateur"));  
+    
+    /// Une boucle créé et affiche la table de multiplication, jusqu'à 10 itérations ///
+
+    for (i=1; i<=10; i++)
     {
-        result = i*multiplicateur;
+        result=i*multiplicateur;
+        document.write(i + "x" + multiplicateur + " = " + result + "<br>");
     }
-    return 
+    return
 }
 
-document.write(result)
+tableMultiplication();
